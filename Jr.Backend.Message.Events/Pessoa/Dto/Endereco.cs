@@ -1,7 +1,10 @@
-﻿namespace Jr.Backend.Message.Events.Pessoa
+﻿using System.Text.Json.Serialization;
+
+namespace Jr.Backend.Message.Events.Pessoa.Dto
 {
     public class Endereco
     {
+        [JsonConstructor]
         public Endereco(string logradouro, string bairro, string numero, string estado, string cidade, string pais, string cep, string complemento)
         {
             Logradouro = logradouro;
