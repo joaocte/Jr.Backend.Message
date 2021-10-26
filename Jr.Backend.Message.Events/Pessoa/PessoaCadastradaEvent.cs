@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Jr.Backend.Message.Events.Cliente
 {
-    public class ClienteCadastrado : IEvent
+    public class PessoaCadastradaEvent : IEvent
     {
         public string Nome { get; }
 
@@ -15,7 +15,7 @@ namespace Jr.Backend.Message.Events.Cliente
         public string Rg { get; }
         public string TituloEleitoral { get; }
 
-        public ClienteCadastrado(string nome, string sobrenome, IList<Endereco> enderecos, string cpf, string rg, string tituloEleitoral)
+        public PessoaCadastradaEvent(string nome, string sobrenome, IList<Endereco> enderecos, string cpf, string rg, string tituloEleitoral)
         {
             Nome = nome;
             Sobrenome = sobrenome;
