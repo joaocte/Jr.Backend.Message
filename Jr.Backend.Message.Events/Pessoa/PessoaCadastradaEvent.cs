@@ -1,7 +1,7 @@
 ﻿using Jr.Backend.Libs.Messaging.Abstractions.Interfaces;
 using System.Collections.Generic;
 
-namespace Jr.Backend.Message.Events.Cliente
+namespace Jr.Backend.Message.Events.Pessoa
 {
     public class PessoaCadastradaEvent : IEvent
     {

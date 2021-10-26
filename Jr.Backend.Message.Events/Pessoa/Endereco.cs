@@ -1,4 +1,4 @@
-﻿namespace Jr.Backend.Message.Events.Cliente
+﻿namespace Jr.Backend.Message.Events.Pessoa
 {
     public class Endereco
     {
