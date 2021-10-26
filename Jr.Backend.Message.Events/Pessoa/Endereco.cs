@@ -2,6 +2,18 @@
 {
     public class Endereco
     {
+        public Endereco(string logradouro, string bairro, string numero, string estado, string cidade, string pais, string cep, string complemento)
+        {
+            Logradouro = logradouro;
+            Bairro = bairro;
+            Numero = numero;
+            Estado = estado;
+            Cidade = cidade;
+            Pais = pais;
+            Cep = cep;
+            Complemento = complemento;
+        }
+
         public string Logradouro { get; }
         public string Bairro { get; }
         public string Numero { get; }
