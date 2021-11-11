@@ -1,21 +1,20 @@
 ﻿using Jr.Backend.Libs.Messaging.Abstractions.Interfaces;
 using Jr.Backend.Message.Events.Pessoa.Dto;
-using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace Jr.Backend.Message.Events.Pessoa
+namespace Jr.Backend.Message.Events.Pessoa.Dto
 {
-    public class PessoaCadastradaEvent : IEvent
+    public abstract class PessoaEventBase : IEvent
     {
         public NomeCompleto NomeCompleto { get; }
 
-        public IList<Endereco> Enderecos { get; }
+        public IEnumerable<Endereco> Enderecos { get; }
 
         public Documentos Documentos { get; }
 
         [JsonConstructor]
-        public PessoaCadastradaEvent(NomeCompleto nomeCompleto, IList<Endereco> enderecos, Documentos documentos)
+        protected PessoaEventBase(NomeCompleto nomeCompleto, IEnumerable<Endereco> enderecos, Documentos documentos)
         {
             NomeCompleto = nomeCompleto;
             Enderecos = enderecos;
