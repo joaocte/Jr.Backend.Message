@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Jr.Backend.Message.Events.Fornecedor.Comum
+namespace Jr.Backend.Message.Share.Fornecedor
 {
     public class InformacoesBancarias
     {

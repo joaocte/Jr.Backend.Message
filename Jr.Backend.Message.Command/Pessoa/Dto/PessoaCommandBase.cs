@@ -3,9 +3,9 @@ using Jr.Backend.Message.Share.Pessoa;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace Jr.Backend.Message.Events.Pessoa.Dto
+namespace Jr.Backend.Message.Command.Pessoa.Dto
 {
-    public abstract class PessoaEventBase : IEvent
+    public abstract class PessoaCommandBase : ICommand
     {
         public NomeCompleto NomeCompleto { get; }
 
@@ -14,7 +14,7 @@ namespace Jr.Backend.Message.Events.Pessoa.Dto
         public Documentos Documentos { get; }
 
         [JsonConstructor]
-        protected PessoaEventBase(NomeCompleto nomeCompleto, IEnumerable<Endereco> enderecos, Documentos documentos)
+        protected PessoaCommandBase(NomeCompleto nomeCompleto, IEnumerable<Endereco> enderecos, Documentos documentos)
         {
             NomeCompleto = nomeCompleto;
             Enderecos = enderecos;

@@ -5,10 +5,10 @@ using System.Text.Json.Serialization;
 
 namespace Jr.Backend.Message.Events.Pessoa.Evemts
 {
-    public class PessoaCadastradaEvent : PessoaEventBase
+    public class PessoaAtualizadaEvent : PessoaEventBase
     {
         [JsonConstructor]
-        public PessoaCadastradaEvent(NomeCompleto nomeCompleto, IList<Endereco> enderecos, Documentos documentos) : base(nomeCompleto, enderecos, documentos)
+        public PessoaAtualizadaEvent(NomeCompleto nomeCompleto, IEnumerable<Endereco> enderecos, Documentos documentos) : base(nomeCompleto, enderecos, documentos)
         {
         }
     }

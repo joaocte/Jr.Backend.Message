@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Jr.Backend.Message.Events.Pessoa.Dto
+namespace Jr.Backend.Message.Share.Pessoa
 {
     public class Documentos
     {

@@ -3,10 +3,14 @@
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>1.0.0-alpha-02</Version>
+		<Version>1.0.0-alpha-03</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="Jr.Backend.Libs.Messaging.Abstractions" Version="1.0.0-alpha-09" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Jr.Backend.Message.Share\Jr.Backend.Message.Share.csproj" />
 	</ItemGroup>
 </Project>
