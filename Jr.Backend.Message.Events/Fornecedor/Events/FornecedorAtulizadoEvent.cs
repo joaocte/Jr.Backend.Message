@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace Jr.Backend.Message.Events.Fornecedor.Events
 {
-    internal class FornecedorAtulizadoEvent : FornecedorEventBase
+    public class FornecedorAtulizadoEvent : FornecedorEventBase
     {
         [JsonConstructor]
         public FornecedorAtulizadoEvent(string celular, string cNAE, string cnpj, DateTime dataCadastro, IEnumerable<string> emailContato, IEnumerable<string> emailFatura, List<string> enderecos, InformacoesBancarias informacoesBancarias, string nomeContato, string nomeRazaoSocial, string status, string telefone, bool aceiteTermosDeUso) : base(celular, cNAE, cnpj, dataCadastro, emailContato, emailFatura, enderecos, informacoesBancarias, nomeContato, nomeRazaoSocial, status, telefone, aceiteTermosDeUso)
