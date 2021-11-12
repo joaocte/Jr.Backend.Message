@@ -1,4 +1,4 @@
-﻿using Jr.Backend.Message.Events.Fornecedor.Comum;
+﻿using Jr.Backend.Message.Share.Fornecedor;
 using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
